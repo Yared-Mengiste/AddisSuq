@@ -1,69 +1,36 @@
-import Image from "next/image";
+"use client";
+import { useMemo, useState } from "react";
+import { ArrowRight, Bell, BookOpen, ChevronDown, Heart, MapPin, Menu, Search, ShoppingBag, Sparkles, Star, Store, X } from "lucide-react";
+
+const shops = [
+  ["Zema Boutique","Fashion & lifestyle","Bole","1.2 km","https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85",34],
+  ["Kera Electronics","Tech & gadgets","Kazanchis","2.4 km","https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=85",28],
+  ["Liya Cosmetics","Beauty & care","Piassa","3.1 km","https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85",41],
+  ["Addis Paper Co.","Stationery & gifts","Mexico","3.8 km","https://images.unsplash.com/photo-1455885666463-8f8f4e9c4e63?auto=format&fit=crop&w=900&q=85",26],
+];
+const products = [
+  ["Linen co-ord set","የበፍታ ልብስ ስብስብ","Zema Boutique",1850,2200,"Best seller","https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85"],
+  ["Canvas tote bag","የጨርቅ ቦርሳ","Zema Boutique",680,0,"","https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85"],
+  ["Wireless earbuds","የጆሮ ማዳመጫ","Kera Electronics",2400,2800,"-14%","https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85"],
+  ["Citrus body mist","የሰውነት ሽቶ","Liya Cosmetics",950,0,"","https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=85"],
+];
+const cats = [["Fashion","የፋሽን","◒"],["Electronics","ኤሌክትሮኒክስ","⌁"],["Beauty","ውበት","✦"],["Home & living","ቤት","⌂"],["Groceries","ሸቀጣ ሸቀጥ","⊙"],["Stationery","የጽሕፈት","✎"]];
+const money = (n:number) => new Intl.NumberFormat("en-US").format(n);
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+  const [lang,setLang] = useState<"EN"|"AM">("EN"), [menu,setMenu] = useState(false), [query,setQuery] = useState(""), [cart,setCart] = useState<number[]>([]), [saved,setSaved] = useState<number[]>([]), [cat,setCat] = useState("All");
+  const filtered = useMemo(()=>products.filter(p=>!query||p.join(" ").toLowerCase().includes(query.toLowerCase())),[query]);
+  return <main className="min-h-screen bg-[#f8f6f1] text-[#183d36]">
+    <div className="bg-[#183d36] px-5 py-2 text-center text-[11px] font-medium tracking-[.12em] text-[#f6efe3]">FREE DELIVERY ON ORDERS OVER 2,000 ETB · ADDIS ABABA</div>
+    <header className="sticky top-0 z-20 border-b border-[#e4ded3] bg-[#f8f6f1]/95 backdrop-blur"><div className="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between px-5 lg:px-8">
+      <button className="lg:hidden" onClick={()=>setMenu(!menu)}>{menu?<X size={22}/>:<Menu size={22}/>}</button><a className="flex items-center gap-2" href="#"><span className="grid h-9 w-9 place-items-center rounded-xl bg-[#d86b46] text-white"><Store size={19}/></span><span className="font-serif text-[26px] font-semibold tracking-[-.04em]">Addis<span className="text-[#d86b46]">Suq</span></span></a>
+      <nav className={`${menu?"absolute left-0 right-0 top-[72px] flex":"hidden"} flex-col gap-5 border-b border-[#e4ded3] bg-[#f8f6f1] px-5 py-5 text-sm lg:static lg:flex lg:flex-row lg:items-center lg:border-0 lg:bg-transparent lg:p-0`}><a className="font-semibold" href="#discover">Discover</a><a href="#shops">Shops near you</a><a href="#about">How it works</a></nav>
+      <div className="flex items-center gap-3"><button className="hidden text-xs font-semibold lg:block" onClick={()=>setLang(lang==="EN"?"AM":"EN")}>{lang} <ChevronDown size={13} className="inline"/></button><button className="relative grid h-10 w-10 place-items-center rounded-full border border-[#ddd6ca] bg-white"><ShoppingBag size={18}/>{cart.length>0&&<span className="absolute -right-1 -top-1 grid h-4 w-4 place-items-center rounded-full bg-[#d86b46] text-[9px] text-white">{cart.length}</span>}</button><button className="hidden rounded-full bg-[#183d36] px-4 py-2.5 text-xs font-semibold text-white sm:block">Sign in</button></div>
+    </div></header>
+    <section id="discover" className="mx-auto max-w-[1240px] px-5 pb-14 pt-12 lg:px-8 lg:pb-20 lg:pt-20"><div className="grid items-center gap-12 lg:grid-cols-[1.02fr_.98fr]"><div><div className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#e8eee8] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[.14em] text-[#3b6d60]"><Sparkles size={13}/> Your city, your market</div><h1 className="max-w-[590px] font-serif text-[48px] leading-[.98] tracking-[-.045em] sm:text-[64px] lg:text-[76px]">Good things are <em className="font-normal text-[#d86b46]">closer</em> than you think.</h1><p className="mt-6 max-w-[470px] text-[16px] leading-7 text-[#5d716c]">Discover the best products from independent shops in Addis Ababa, delivered to your door or ready for pickup.</p><div className="mt-8 flex max-w-[550px] items-center gap-3 rounded-2xl border border-[#ded8cd] bg-white p-2 shadow-[0_10px_30px_rgba(40,56,46,.08)]"><Search size={20} className="ml-3 text-[#8b9b94]"/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="What are you looking for?" className="min-w-0 flex-1 bg-transparent px-2 py-3 text-sm outline-none"/><button className="rounded-xl bg-[#d86b46] px-5 py-3 text-sm font-semibold text-white">Search</button></div><div className="mt-5 flex items-center gap-2 text-xs text-[#6b7e77]"><MapPin size={14} className="text-[#d86b46]"/> Shopping in <strong className="text-[#183d36]">Bole, Addis Ababa</strong><button className="ml-1 underline">Change</button></div></div><div className="relative"><div className="aspect-[4/4.2] overflow-hidden rounded-[28px] bg-[#ded6c7]"><img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1100&q=85" className="h-full w-full object-cover" alt="Local market shopping"/><div className="absolute inset-0 bg-gradient-to-t from-[#183d36]/45 to-transparent"/></div><div className="absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl border border-white/60 bg-white/95 px-4 py-3 shadow-xl sm:left-8"><div className="grid h-10 w-10 place-items-center rounded-full bg-[#e8eee8] text-[#3b6d60]"><MapPin size={18}/></div><div><p className="text-[11px] text-[#728079]">Delivering around</p><p className="text-sm font-semibold">Bole · 1–3 km radius</p></div></div></div></div></section>
+    <section className="border-y border-[#e6dfd4] bg-[#f2efe8] py-8"><div className="mx-auto max-w-[1240px] overflow-x-auto px-5 lg:px-8"><div className="flex min-w-max items-center gap-3"><button onClick={()=>setCat("All")} className={`rounded-full px-5 py-3 text-sm font-semibold ${cat==="All"?"bg-[#183d36] text-white":"bg-white text-[#5f7169]"}`}>All categories</button>{cats.map(([en,am,icon])=><button key={en} onClick={()=>setCat(en)} className={`flex items-center gap-2 rounded-full border px-5 py-3 text-sm ${cat===en?"border-[#d86b46] bg-[#fff5ef] text-[#c75d3d]":"border-[#ded8cd] text-[#5f7169]"}`}><span>{icon}</span>{lang==="EN"?en:am}</button>)}</div></div></section>
+    <section id="shops" className="mx-auto max-w-[1240px] px-5 py-16 lg:px-8"><div className="flex items-end justify-between"><div><p className="text-xs font-semibold uppercase tracking-[.16em] text-[#d86b46]">Handpicked for you</p><h2 className="mt-2 font-serif text-4xl tracking-[-.035em]">Shops near you</h2></div><a href="#" className="hidden items-center gap-2 text-sm font-semibold sm:flex">See all shops <ArrowRight size={16}/></a></div><div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{shops.map((s,i)=><article key={s[0]} className="group overflow-hidden rounded-2xl border border-[#e5ded3] bg-white"><div className="relative aspect-[1.12] overflow-hidden"><img src={s[4] as string} alt={s[0] as string} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><button onClick={()=>setSaved(saved.includes(i)?saved.filter(x=>x!==i):[...saved,i])} className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90"><Heart size={17} fill={saved.includes(i)?"#d86b46":"none"} color={saved.includes(i)?"#d86b46":"currentColor"}/></button></div><div className="p-4"><div className="flex items-center justify-between"><h3 className="font-serif text-xl">{s[0]}</h3><span className="flex items-center gap-1 text-[11px] text-[#6f7e76]"><MapPin size={12}/>{s[3]}</span></div><p className="mt-1 text-xs text-[#78877f]">{s[1]} · {s[2]}</p><div className="mt-4 flex items-center justify-between border-t border-[#eee9e1] pt-3 text-xs"><span className="text-[#64756d]">{s[5]} products</span><span className="flex items-center gap-1 font-medium"><Star size={13} fill="#e5a342" color="#e5a342"/> 4.8</span></div></div></article>)}</div></section>
+    <section className="bg-[#183d36] px-5 py-16 text-[#f7f1e8] lg:px-8"><div className="mx-auto max-w-[1240px]"><div><p className="text-xs font-semibold uppercase tracking-[.16em] text-[#e9a17c]">Popular right now</p><h2 className="mt-2 font-serif text-4xl tracking-[-.035em]">Find your next favourite</h2></div><div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{filtered.map((p,i)=><article key={p[0]} className="group overflow-hidden rounded-2xl bg-[#f8f6f1] text-[#183d36]"><div className="relative aspect-square overflow-hidden"><img src={p[6] as string} alt={p[0] as string} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/>{p[5]&&<span className="absolute left-3 top-3 rounded-full bg-[#d86b46] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white">{p[5]}</span>}<button onClick={()=>setCart([...cart,i])} className="absolute bottom-3 right-3 grid h-10 w-10 translate-y-2 place-items-center rounded-full bg-white opacity-0 shadow-lg transition group-hover:translate-y-0 group-hover:opacity-100"><ShoppingBag size={17}/></button></div><div className="p-4"><p className="text-[11px] font-semibold uppercase tracking-wider text-[#8b9a91]">{p[2]}</p><h3 className="mt-1 font-serif text-xl">{lang==="EN"?p[0]:p[1]}</h3><div className="mt-3 flex items-center gap-2"><span className="font-semibold">{money(p[3] as number)} ETB</span>{(p[4] as number)>0&&<del className="text-xs text-[#93a19a]">{money(p[4] as number)}</del>}</div></div></article>)}</div></div></section>
+    <section id="about" className="mx-auto max-w-[1240px] px-5 py-16 lg:px-8"><div className="grid gap-5 md:grid-cols-3">{[[MapPin,"Made for Addis","Real shops, real products, all within your neighbourhood."],[BookOpen,"Shop with ease","Pay with Telebirr, CBE Birr, Chapa or cash on delivery."],[Bell,"Stay in the loop","Get clear updates from order placed to your doorstep."]].map(([Icon,title,body])=><div key={title as string} className="rounded-2xl bg-[#e8eee8] p-7"><Icon className="text-[#d86b46]" size={25}/><h3 className="mt-5 font-serif text-2xl">{title as string}</h3><p className="mt-2 text-sm leading-6 text-[#62746b]">{body as string}</p></div>)}</div></section><footer className="border-t border-[#e4ded3] px-5 py-8 text-center text-xs text-[#718079]">© 2026 AddisSuq · Your neighbourhood, online.</footer>
+  </main>;
 }
