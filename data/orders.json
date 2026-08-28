@@ -1,0 +1,1679 @@
+[
+  {
+    "id": "ord_001",
+    "customerId": "cust_02",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_013",
+        "nameEn": "Beaded jewellery set",
+        "nameAm": "የዶቄት ጌጣጌጥ ስብስብ",
+        "qty": 1,
+        "price": 780
+      },
+      {
+        "productId": "prod_002",
+        "nameEn": "Handwoven cotton netela",
+        "nameAm": "የእጅ ተሰራ ጥምብ ነጠላ",
+        "qty": 1,
+        "price": 1450
+      }
+    ],
+    "subtotal": 2230,
+    "deliveryFee": 0,
+    "total": 2230,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-14",
+      "window": "Afternoon (3 – 6)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_02_addr_1",
+      "label": "Home",
+      "address": "Kazanchis, behind Ministry of Education",
+      "subCity": "Kirkos",
+      "lat": 9.016,
+      "lng": 38.768
+    },
+    "distanceKm": 3,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_001-8794",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-14T07:15:49.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-14T07:16:03.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-14T07:43:49.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-14T07:54:49.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-14T08:39:49.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 14000,
+    "createdAt": "2026-08-14T07:15:49.000Z"
+  },
+  {
+    "id": "ord_002",
+    "customerId": "cust_01",
+    "shopId": "shop_02",
+    "items": [
+      {
+        "productId": "prod_023",
+        "nameEn": "Wireless earbuds (ANC)",
+        "nameAm": "የሽቦ አልባ የጆሮ ማዳመጫ",
+        "qty": 3,
+        "price": 2400
+      }
+    ],
+    "subtotal": 7200,
+    "deliveryFee": 0,
+    "total": 7200,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-16",
+      "window": "Evening (6 – 8)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_01_addr_1",
+      "label": "Home",
+      "address": "Bole Medhanialem, Awlo Building 3rd floor",
+      "subCity": "Bole",
+      "lat": 8.996,
+      "lng": 38.7905
+    },
+    "distanceKm": 3.2,
+    "paymentMethod": "chapa",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_002-5922",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-15T13:40:26.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-15T13:40:39.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-15T14:02:26.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-15T14:17:26.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-15T14:54:26.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "Please call when you arrive.",
+    "confirmationMs": 13000,
+    "createdAt": "2026-08-15T13:40:26.000Z"
+  },
+  {
+    "id": "ord_003",
+    "customerId": "cust_05",
+    "shopId": "shop_03",
+    "items": [
+      {
+        "productId": "prod_046",
+        "nameEn": "Traditional black soap",
+        "nameAm": "ባህላዊ ጥቁር ሳሙና",
+        "qty": 2,
+        "price": 350
+      }
+    ],
+    "subtotal": 700,
+    "deliveryFee": 0,
+    "total": 700,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-16",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "cod",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_003-1955",
+    "status": "collected",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-15T08:20:16.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-15T08:20:21.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-15T08:32:16.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-15T08:43:16.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "collected",
+        "at": "2026-08-15T11:31:16.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 5000,
+    "createdAt": "2026-08-15T08:20:16.000Z"
+  },
+  {
+    "id": "ord_004",
+    "customerId": "cust_03",
+    "shopId": "shop_04",
+    "items": [
+      {
+        "productId": "prod_080",
+        "nameEn": "Geometry instrument set",
+        "nameAm": "የጂኦሜትሪ መሣሪያ ስብስብ",
+        "qty": 1,
+        "price": 330
+      },
+      {
+        "productId": "prod_076",
+        "nameEn": "Paper cutter",
+        "nameAm": "የወረቀት መቁረጫ",
+        "qty": 3,
+        "price": 380
+      }
+    ],
+    "subtotal": 1470,
+    "deliveryFee": 90,
+    "total": 1560,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-16",
+      "window": "Evening (6 – 8)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_03_addr_1",
+      "label": "Home",
+      "address": "Sar Bet, Abinet road",
+      "subCity": "Nifas Silk-Lafto",
+      "lat": 8.996,
+      "lng": 38.752
+    },
+    "distanceKm": 6.5,
+    "paymentMethod": "cbebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_004-1267",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-16T06:30:02.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-16T06:30:14.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-16T06:42:02.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-16T07:20:02.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-16T08:19:02.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "Leave with the guard.",
+    "confirmationMs": 12000,
+    "createdAt": "2026-08-16T06:30:02.000Z"
+  },
+  {
+    "id": "ord_005",
+    "customerId": "cust_06",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_009",
+        "nameEn": "Traditional kaba jacket",
+        "nameAm": "ባህላዊ ካባ",
+        "qty": 3,
+        "price": 5600
+      },
+      {
+        "productId": "prod_008",
+        "nameEn": "Suede desert boots",
+        "nameAm": "የስዊድ ዲዛርቦት ጫማ",
+        "qty": 3,
+        "price": 2200
+      },
+      {
+        "productId": "prod_015",
+        "nameEn": "Women's cotton blouse",
+        "nameAm": "የሴቶች ጥምብ ሸሚዝ",
+        "qty": 3,
+        "price": 1150
+      }
+    ],
+    "subtotal": 26850,
+    "deliveryFee": 0,
+    "total": 26850,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-17",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_005-2559",
+    "status": "collected",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-16T12:05:22.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-16T12:05:33.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-16T12:32:22.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-16T12:48:22.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "collected",
+        "at": "2026-08-16T15:41:22.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 11000,
+    "createdAt": "2026-08-16T12:05:22.000Z"
+  },
+  {
+    "id": "ord_006",
+    "customerId": "cust_04",
+    "shopId": "shop_02",
+    "items": [
+      {
+        "productId": "prod_036",
+        "nameEn": "Karaoke microphone",
+        "nameAm": "የካራኦኬ ማይክሮፎን",
+        "qty": 1,
+        "price": 1550
+      }
+    ],
+    "subtotal": 1550,
+    "deliveryFee": 90,
+    "total": 1640,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-17",
+      "window": "Midday (12 – 3)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_04_addr_1",
+      "label": "Home",
+      "address": "Gerji, Bethlehem area",
+      "subCity": "Bole",
+      "lat": 9.021,
+      "lng": 38.793
+    },
+    "distanceKm": 5.2,
+    "paymentMethod": "chapa",
+    "paymentStatus": "failed",
+    "paymentRef": null,
+    "status": "cancelled",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-17T11:22:28.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-17T11:22:32.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "cancelled",
+        "at": "2026-08-17T11:45:28.000Z",
+        "by": "vendor",
+        "note": "Payment could not be verified, so the order was cancelled."
+      }
+    ],
+    "cancellationReason": "Payment could not be verified, so the order was cancelled.",
+    "customerNote": "",
+    "confirmationMs": 4000,
+    "createdAt": "2026-08-17T11:22:28.000Z"
+  },
+  {
+    "id": "ord_007",
+    "customerId": "cust_07",
+    "shopId": "shop_03",
+    "items": [
+      {
+        "productId": "prod_048",
+        "nameEn": "Aloe body lotion",
+        "nameAm": "የአሎዌ የሰውነት ሎሽን",
+        "qty": 1,
+        "price": 720
+      },
+      {
+        "productId": "prod_062",
+        "nameEn": "Hair brush",
+        "nameAm": "የፀጉር ብሩሽ",
+        "qty": 2,
+        "price": 520
+      }
+    ],
+    "subtotal": 1760,
+    "deliveryFee": 90,
+    "total": 1850,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-18",
+      "window": "Evening (6 – 8)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_07_addr_1",
+      "label": "Home",
+      "address": "Megenagna, Dhaka area",
+      "subCity": "Yeka",
+      "lat": 9.012,
+      "lng": 38.806
+    },
+    "distanceKm": 6.6,
+    "paymentMethod": "cod",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_007-6139",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-17T15:10:02.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-17T15:10:05.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-17T15:28:02.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-17T15:47:02.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-17T16:16:02.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "Ring the bell twice.",
+    "confirmationMs": 3000,
+    "createdAt": "2026-08-17T15:10:02.000Z"
+  },
+  {
+    "id": "ord_008",
+    "customerId": "cust_08",
+    "shopId": "shop_04",
+    "items": [
+      {
+        "productId": "prod_077",
+        "nameEn": "A4 paper ream 80g",
+        "nameAm": "የA4 ወረቀት ሪም 80ግ",
+        "qty": 2,
+        "price": 850
+      }
+    ],
+    "subtotal": 1700,
+    "deliveryFee": 0,
+    "total": 1700,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-19",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "cbebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_008-3711",
+    "status": "collected",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-18T09:45:04.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-18T09:45:17.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-18T10:22:04.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-18T10:21:04.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "collected",
+        "at": "2026-08-18T14:13:04.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 13000,
+    "createdAt": "2026-08-18T09:45:04.000Z"
+  },
+  {
+    "id": "ord_009",
+    "customerId": "cust_09",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_020",
+        "nameEn": "Weekend canvas tote",
+        "nameAm": "የጨርቅ ቦርሳ",
+        "qty": 1,
+        "price": 620
+      },
+      {
+        "productId": "prod_022",
+        "nameEn": "Jebena & finjal coffee set",
+        "nameAm": "ጀበናና ፊንጃል የቡና ስብስብ",
+        "qty": 2,
+        "price": 3200
+      },
+      {
+        "productId": "prod_007",
+        "nameEn": "Leather handbag",
+        "nameAm": "የቆዳ እጅ ቦርሳ",
+        "qty": 3,
+        "price": 2600
+      }
+    ],
+    "subtotal": 14820,
+    "deliveryFee": 0,
+    "total": 14820,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-20",
+      "window": "Afternoon (3 – 6)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_09_addr_1",
+      "label": "Home",
+      "address": "Haile Garment, house 44",
+      "subCity": "Nifas Silk-Lafto",
+      "lat": 8.975,
+      "lng": 38.766
+    },
+    "distanceKm": 5,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_009-3688",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-19T14:35:50.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-19T14:35:56.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-19T15:08:50.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-19T15:15:50.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-19T15:52:50.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 6000,
+    "createdAt": "2026-08-19T14:35:50.000Z"
+  },
+  {
+    "id": "ord_010",
+    "customerId": "cust_10",
+    "shopId": "shop_02",
+    "items": [
+      {
+        "productId": "prod_029",
+        "nameEn": "Bluetooth party speaker",
+        "nameAm": "ብሉቱዝ ስፒከር",
+        "qty": 2,
+        "price": 3400
+      },
+      {
+        "productId": "prod_037",
+        "nameEn": "Flash drive 64GB",
+        "nameAm": "ፍላሽ ዲስክ 64GB",
+        "qty": 3,
+        "price": 850
+      }
+    ],
+    "subtotal": 9350,
+    "deliveryFee": 0,
+    "total": 9350,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-20",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "cod",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_010-2319",
+    "status": "collected",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-19T07:50:02.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-19T07:50:14.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-19T08:07:02.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-19T08:20:02.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "collected",
+        "at": "2026-08-19T12:27:02.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 12000,
+    "createdAt": "2026-08-19T07:50:02.000Z"
+  },
+  {
+    "id": "ord_011",
+    "customerId": "cust_01",
+    "shopId": "shop_03",
+    "items": [
+      {
+        "productId": "prod_060",
+        "nameEn": "Toothbrush soft (pack of 3)",
+        "nameAm": "ለስላሳ የጥርስ ብሩሽ (3 ጥቅል)",
+        "qty": 3,
+        "price": 260
+      }
+    ],
+    "subtotal": 780,
+    "deliveryFee": 90,
+    "total": 870,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-20",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_01_addr_1",
+      "label": "Home",
+      "address": "Bole Medhanialem, Awlo Building 3rd floor",
+      "subCity": "Bole",
+      "lat": 8.996,
+      "lng": 38.7905
+    },
+    "distanceKm": 6.4,
+    "paymentMethod": "cbebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_011-8382",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-20T10:25:37.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-20T10:25:43.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-20T10:47:37.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-20T11:24:37.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-20T11:33:37.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "Gift wrap if possible.",
+    "confirmationMs": 6000,
+    "createdAt": "2026-08-20T10:25:37.000Z"
+  },
+  {
+    "id": "ord_012",
+    "customerId": "cust_11",
+    "shopId": "shop_04",
+    "items": [
+      {
+        "productId": "prod_080",
+        "nameEn": "Geometry instrument set",
+        "nameAm": "የጂኦሜትሪ መሣሪያ ስብስብ",
+        "qty": 3,
+        "price": 330
+      }
+    ],
+    "subtotal": 990,
+    "deliveryFee": 0,
+    "total": 990,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-22",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_012-7586",
+    "status": "collected",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-21T13:30:42.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-21T13:30:53.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-21T13:45:42.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-21T14:01:42.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "collected",
+        "at": "2026-08-21T15:39:42.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 11000,
+    "createdAt": "2026-08-21T13:30:42.000Z"
+  },
+  {
+    "id": "ord_013",
+    "customerId": "cust_12",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_005",
+        "nameEn": "Linen blend shirt",
+        "nameAm": "የበፍታ ቅልቅል ሸሚዝ",
+        "qty": 1,
+        "price": 1250
+      },
+      {
+        "productId": "prod_011",
+        "nameEn": "Men's two-piece suit",
+        "nameAm": "የወንድ የኹለት ክፍል ሱት",
+        "qty": 3,
+        "price": 7200
+      }
+    ],
+    "subtotal": 22850,
+    "deliveryFee": 0,
+    "total": 22850,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-23",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_12_addr_1",
+      "label": "Home",
+      "address": "Gurd Shola, near Tabote Building",
+      "subCity": "Bole",
+      "lat": 9.021,
+      "lng": 38.81
+    },
+    "distanceKm": 2.1,
+    "paymentMethod": "cod",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_013-4087",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-22T16:05:58.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-22T16:06:11.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-22T16:46:58.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-22T16:35:58.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-22T17:39:58.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 13000,
+    "createdAt": "2026-08-22T16:05:58.000Z"
+  },
+  {
+    "id": "ord_014",
+    "customerId": "cust_13",
+    "shopId": "shop_02",
+    "items": [
+      {
+        "productId": "prod_040",
+        "nameEn": "AA batteries (pack of 4)",
+        "nameAm": "የAA ባትሪ (4 ጥቅል)",
+        "qty": 1,
+        "price": 180
+      }
+    ],
+    "subtotal": 180,
+    "deliveryFee": 0,
+    "total": 180,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-23",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "chapa",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_014-7806",
+    "status": "collected",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-22T08:15:22.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-22T08:15:29.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-22T08:28:22.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-22T08:39:22.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "collected",
+        "at": "2026-08-22T11:59:22.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 7000,
+    "createdAt": "2026-08-22T08:15:22.000Z"
+  },
+  {
+    "id": "ord_015",
+    "customerId": "cust_02",
+    "shopId": "shop_03",
+    "items": [
+      {
+        "productId": "prod_052",
+        "nameEn": "Clay face mask",
+        "nameAm": "የሸክላ ፊሺያል ማስክ",
+        "qty": 1,
+        "price": 640
+      }
+    ],
+    "subtotal": 640,
+    "deliveryFee": 60,
+    "total": 700,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-23",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_02_addr_1",
+      "label": "Home",
+      "address": "Kazanchis, behind Ministry of Education",
+      "subCity": "Kirkos",
+      "lat": 9.016,
+      "lng": 38.768
+    },
+    "distanceKm": 3.1,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "refunded",
+    "paymentRef": null,
+    "status": "cancelled",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-23T07:40:41.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "cancelled",
+        "at": "2026-08-23T08:34:41.000Z",
+        "by": "customer",
+        "note": "Customer asked to cancel before packing."
+      }
+    ],
+    "cancellationReason": "Customer asked to cancel before packing.",
+    "customerNote": "",
+    "confirmationMs": null,
+    "createdAt": "2026-08-23T07:40:41.000Z"
+  },
+  {
+    "id": "ord_016",
+    "customerId": "cust_14",
+    "shopId": "shop_04",
+    "items": [
+      {
+        "productId": "prod_081",
+        "nameEn": "Academic planner 2026",
+        "nameAm": "የ2026 የትምህርት ካለንደር",
+        "qty": 2,
+        "price": 480
+      },
+      {
+        "productId": "prod_079",
+        "nameEn": "School backpack",
+        "nameAm": "የትምህርት ቤት ባክፓክ",
+        "qty": 3,
+        "price": 1650
+      }
+    ],
+    "subtotal": 5910,
+    "deliveryFee": 0,
+    "total": 5910,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-25",
+      "window": "Afternoon (3 – 6)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_14_addr_1",
+      "label": "Home",
+      "address": "Shiro Meda, weavers street",
+      "subCity": "Gulele",
+      "lat": 9.047,
+      "lng": 38.764
+    },
+    "distanceKm": 4.4,
+    "paymentMethod": "chapa",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_016-5597",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-24T12:55:19.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-24T12:55:30.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-24T13:11:19.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-24T13:48:19.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-24T13:43:19.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 11000,
+    "createdAt": "2026-08-24T12:55:19.000Z"
+  },
+  {
+    "id": "ord_017",
+    "customerId": "cust_15",
+    "shopId": "shop_02",
+    "items": [
+      {
+        "productId": "prod_034",
+        "nameEn": "Scientific calculator",
+        "nameAm": "ሳይንሳዊ ካልኩሌተር",
+        "qty": 3,
+        "price": 980
+      },
+      {
+        "productId": "prod_044",
+        "nameEn": "Rechargeable torch",
+        "nameAm": "ተመላ የእጅ መብራት",
+        "qty": 1,
+        "price": 760
+      },
+      {
+        "productId": "prod_033",
+        "nameEn": "Portable FM radio",
+        "nameAm": "ተንቀሳቃሽ ሬዲዮ",
+        "qty": 2,
+        "price": 1200
+      }
+    ],
+    "subtotal": 6100,
+    "deliveryFee": 0,
+    "total": 6100,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-26",
+      "window": "Midday (12 – 3)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_15_addr_1",
+      "label": "Home",
+      "address": "Lebu, Mebrathayllem area",
+      "subCity": "Nifas Silk-Lafto",
+      "lat": 8.965,
+      "lng": 38.735
+    },
+    "distanceKm": 3.9,
+    "paymentMethod": "cod",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_017-3388",
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-26T09:30:45.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-26T09:30:49.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-26T09:47:45.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-26T10:12:45.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "delivered",
+        "at": "2026-08-26T11:12:45.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 4000,
+    "createdAt": "2026-08-26T09:30:45.000Z"
+  },
+  {
+    "id": "ord_018",
+    "customerId": "cust_03",
+    "shopId": "shop_03",
+    "items": [
+      {
+        "productId": "prod_061",
+        "nameEn": "Mint toothpaste",
+        "nameAm": "የሚንት ጣዕም የጥርስ ማጽጃ",
+        "qty": 2,
+        "price": 310
+      }
+    ],
+    "subtotal": 620,
+    "deliveryFee": 60,
+    "total": 680,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_03_addr_1",
+      "label": "Home",
+      "address": "Sar Bet, Abinet road",
+      "subCity": "Nifas Silk-Lafto",
+      "lat": 8.996,
+      "lng": 38.752
+    },
+    "distanceKm": 4.9,
+    "paymentMethod": "cbebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_018-5983",
+    "status": "packed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-27T13:45:48.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-27T13:45:59.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-27T14:24:48.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 11000,
+    "createdAt": "2026-08-27T13:45:48.000Z"
+  },
+  {
+    "id": "ord_019",
+    "customerId": "cust_06",
+    "shopId": "shop_04",
+    "items": [
+      {
+        "productId": "prod_081",
+        "nameEn": "Academic planner 2026",
+        "nameAm": "የ2026 የትምህርት ካለንደር",
+        "qty": 3,
+        "price": 480
+      },
+      {
+        "productId": "prod_075",
+        "nameEn": "Desktop calculator",
+        "nameAm": "የጠረጴዛ ካልኩሌተር",
+        "qty": 3,
+        "price": 620
+      }
+    ],
+    "subtotal": 3300,
+    "deliveryFee": 0,
+    "total": 3300,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_019-2655",
+    "status": "ready_for_pickup",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-27T07:20:41.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-27T07:20:48.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-27T07:32:41.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-27T07:55:41.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 7000,
+    "createdAt": "2026-08-27T07:20:41.000Z"
+  },
+  {
+    "id": "ord_020",
+    "customerId": "cust_04",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_010",
+        "nameEn": "Silk-touch evening dress",
+        "nameAm": "የሐረግ ድንቅ የምሽት ቀሚስ",
+        "qty": 2,
+        "price": 3850
+      }
+    ],
+    "subtotal": 7700,
+    "deliveryFee": 0,
+    "total": 7700,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_04_addr_1",
+      "label": "Home",
+      "address": "Gerji, Bethlehem area",
+      "subCity": "Bole",
+      "lat": 9.021,
+      "lng": 38.793
+    },
+    "distanceKm": 1.2,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_020-8278",
+    "status": "out_for_delivery",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-28T10:05:30.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-28T10:05:39.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-28T10:49:30.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "out_for_delivery",
+        "at": "2026-08-28T10:43:30.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "Call before arriving.",
+    "confirmationMs": 9000,
+    "createdAt": "2026-08-28T10:05:30.000Z"
+  },
+  {
+    "id": "ord_021",
+    "customerId": "cust_07",
+    "shopId": "shop_02",
+    "items": [
+      {
+        "productId": "prod_042",
+        "nameEn": "Mini tripod (phone)",
+        "nameAm": "ሚኒ ትሪፖድ",
+        "qty": 1,
+        "price": 620
+      },
+      {
+        "productId": "prod_043",
+        "nameEn": "Electric kettle 1.7L",
+        "nameAm": "የኤሌክትሪክ ውሃ ማሞቂያ 1.7ለ",
+        "qty": 2,
+        "price": 2200
+      },
+      {
+        "productId": "prod_031",
+        "nameEn": "Phone holder (dashboard)",
+        "nameAm": "የስልክ ተንጠልጣይ መያዣ",
+        "qty": 2,
+        "price": 420
+      }
+    ],
+    "subtotal": 5860,
+    "deliveryFee": 0,
+    "total": 5860,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_07_addr_1",
+      "label": "Home",
+      "address": "Megenagna, Dhaka area",
+      "subCity": "Yeka",
+      "lat": 9.012,
+      "lng": 38.806
+    },
+    "distanceKm": 5.5,
+    "paymentMethod": "chapa",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_021-8285",
+    "status": "packed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-28T08:30:49.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-28T08:30:52.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-28T09:04:49.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 3000,
+    "createdAt": "2026-08-28T08:30:49.000Z"
+  },
+  {
+    "id": "ord_022",
+    "customerId": "cust_09",
+    "shopId": "shop_04",
+    "items": [
+      {
+        "productId": "prod_083",
+        "nameEn": "Laminating pouches A4 (20)",
+        "nameAm": "ላሚናት ማሸጊያ A4 (20)",
+        "qty": 1,
+        "price": 390
+      },
+      {
+        "productId": "prod_066",
+        "nameEn": "Gel pens (pack of 5)",
+        "nameAm": "ጄል ብዕር (5 ጥቅል)",
+        "qty": 3,
+        "price": 220
+      }
+    ],
+    "subtotal": 1050,
+    "deliveryFee": 0,
+    "total": 1050,
+    "fulfilmentType": "pickup",
+    "slot": {
+      "date": "2026-08-29",
+      "window": "Any time during trading hours",
+      "label": "Pickup"
+    },
+    "deliveryAddress": null,
+    "distanceKm": 0,
+    "paymentMethod": "cod",
+    "paymentStatus": "pending",
+    "paymentRef": null,
+    "status": "ready_for_pickup",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-28T07:45:57.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-28T07:46:00.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "packed",
+        "at": "2026-08-28T08:19:57.000Z",
+        "by": "vendor"
+      },
+      {
+        "status": "ready_for_pickup",
+        "at": "2026-08-28T08:10:57.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 3000,
+    "createdAt": "2026-08-28T07:45:57.000Z"
+  },
+  {
+    "id": "ord_023",
+    "customerId": "cust_05",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_018",
+        "nameEn": "Woven cotton throw",
+        "nameAm": "የእጅ ተሰራ ጥምብ ሽፋን",
+        "qty": 2,
+        "price": 2400
+      }
+    ],
+    "subtotal": 4800,
+    "deliveryFee": 0,
+    "total": 4800,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Midday (12 – 3)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_05_addr_1",
+      "label": "Home",
+      "address": "Old Airport, Tsegaye street",
+      "subCity": "Bole",
+      "lat": 8.983,
+      "lng": 38.769
+    },
+    "distanceKm": 4.1,
+    "paymentMethod": "cbebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_023-3432",
+    "status": "confirmed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-28T09:10:30.000Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-28T09:10:36.000Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 6000,
+    "createdAt": "2026-08-28T09:10:30.000Z"
+  },
+  {
+    "id": "ord_024",
+    "customerId": "cust_10",
+    "shopId": "shop_03",
+    "items": [
+      {
+        "productId": "prod_053",
+        "nameEn": "Gentle shampoo 400ml",
+        "nameAm": "ለስላሳ ሻምፑ 400ሚል",
+        "qty": 1,
+        "price": 590
+      }
+    ],
+    "subtotal": 590,
+    "deliveryFee": 130,
+    "total": 720,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_10_addr_1",
+      "label": "Home",
+      "address": "CMC road, St. Michael church",
+      "subCity": "Bole",
+      "lat": 9.028,
+      "lng": 38.817
+    },
+    "distanceKm": 7.2,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_024-8271",
+    "status": "placed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-28T09:40:57.000Z",
+        "by": "customer"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": null,
+    "createdAt": "2026-08-28T09:40:57.000Z"
+  },
+  {
+    "id": "ord_025",
+    "customerId": "cust_08",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_009",
+        "nameEn": "Traditional kaba jacket",
+        "nameAm": "ባህላዊ ካባ",
+        "qty": 2,
+        "price": 5600
+      },
+      {
+        "productId": "prod_001",
+        "nameEn": "Habesha kemis — modern cut",
+        "nameAm": "ዘመናዊ የሐበሻ ቀሚስ",
+        "qty": 3,
+        "price": 4800
+      }
+    ],
+    "subtotal": 25600,
+    "deliveryFee": 0,
+    "total": 25600,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_08_addr_1",
+      "label": "Home",
+      "address": "Summit, Safari building",
+      "subCity": "Bole",
+      "lat": 9.029,
+      "lng": 38.799
+    },
+    "distanceKm": 2.2,
+    "paymentMethod": "cod",
+    "paymentStatus": "pending",
+    "paymentRef": null,
+    "status": "placed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-28T09:55:12.000Z",
+        "by": "customer"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": null,
+    "createdAt": "2026-08-28T09:55:12.000Z"
+  },
+  {
+    "id": "ord_026",
+    "customerId": "cust_01",
+    "shopId": "shop_01",
+    "items": [
+      {
+        "productId": "prod_003",
+        "nameEn": "Shemma cotton scarf",
+        "nameAm": "የሸማ ጥምብ ሻል",
+        "qty": 1,
+        "price": 850
+      }
+    ],
+    "subtotal": 850,
+    "deliveryFee": 40,
+    "total": 890,
+    "fulfilmentType": "delivery",
+    "slot": {
+      "date": "2026-08-28",
+      "window": "Morning (9 – 12)",
+      "label": "Delivery"
+    },
+    "deliveryAddress": {
+      "id": "cust_01_addr_1",
+      "label": "Home",
+      "address": "Bole Medhanialem, Awlo Building 3rd floor",
+      "subCity": "Bole",
+      "lat": 8.996,
+      "lng": 38.7905
+    },
+    "distanceKm": 1.6,
+    "paymentMethod": "telebirr",
+    "paymentStatus": "paid",
+    "paymentRef": "PAY-ORD_026-9756",
+    "status": "confirmed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "2026-08-28T20:54:25.036Z",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "2026-08-28T20:54:35.438Z",
+        "by": "vendor"
+      }
+    ],
+    "cancellationReason": null,
+    "customerNote": "",
+    "confirmationMs": 10402,
+    "createdAt": "2026-08-28T20:54:25.036Z"
+  }
+]

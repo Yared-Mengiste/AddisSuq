@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cat_fashion",
+    "nameEn": "Fashion & Lifestyle",
+    "nameAm": "ፋሽንና ልብስ",
+    "icon": "Shirt",
+    "accent": "#d86b46"
+  },
+  {
+    "id": "cat_electronics",
+    "nameEn": "Electronics",
+    "nameAm": "ኤሌክትሮኒክስ",
+    "icon": "Zap",
+    "accent": "#4d7c8a"
+  },
+  {
+    "id": "cat_beauty",
+    "nameEn": "Beauty & Personal Care",
+    "nameAm": "ውበትና እንክብካቤ",
+    "icon": "Sparkles",
+    "accent": "#c9573f"
+  },
+  {
+    "id": "cat_stationery",
+    "nameEn": "Stationery & Gifts",
+    "nameAm": "የጽሕፈት ዕቃዎች",
+    "icon": "Pencil",
+    "accent": "#7b8f52"
+  },
+  {
+    "id": "cat_groceries",
+    "nameEn": "Mini-market",
+    "nameAm": "ሚኒ ማርኬት",
+    "icon": "ShoppingBasket",
+    "accent": "#2f7d62"
+  },
+  {
+    "id": "cat_home",
+    "nameEn": "Home & Living",
+    "nameAm": "ቤትና እቃ",
+    "icon": "Home",
+    "accent": "#b0714c"
+  }
+]

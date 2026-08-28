@@ -1,0 +1,303 @@
+[
+  {
+    "id": "cust_01",
+    "name": "Hanna Bekele",
+    "phone": "+251911223344",
+    "email": "hanna.bekele@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_01_addr_1",
+        "label": "Home",
+        "address": "Bole Medhanialem, Awlo Building 3rd floor",
+        "subCity": "Bole",
+        "lat": 8.996,
+        "lng": 38.7905
+      },
+      {
+        "id": "cust_01_addr_2",
+        "label": "Work",
+        "address": "Kazanchis, UNECA compound gate",
+        "subCity": "Kirkos",
+        "lat": 9.018,
+        "lng": 38.77
+      }
+    ],
+    "defaultAddressId": "cust_01_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-12-09T07:15:32.000Z"
+  },
+  {
+    "id": "cust_02",
+    "name": "Abel Tesfaye",
+    "phone": "+251911556677",
+    "email": "abel.tesfaye@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_02_addr_1",
+        "label": "Home",
+        "address": "Kazanchis, behind Ministry of Education",
+        "subCity": "Kirkos",
+        "lat": 9.016,
+        "lng": 38.768
+      }
+    ],
+    "defaultAddressId": "cust_02_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2026-02-20T07:15:38.000Z"
+  },
+  {
+    "id": "cust_03",
+    "name": "Rahel Mekonnen",
+    "phone": "+251912334455",
+    "email": "rahel.mekonnen@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_03_addr_1",
+        "label": "Home",
+        "address": "Sar Bet, Abinet road",
+        "subCity": "Nifas Silk-Lafto",
+        "lat": 8.996,
+        "lng": 38.752
+      }
+    ],
+    "defaultAddressId": "cust_03_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2026-01-30T07:15:28.000Z"
+  },
+  {
+    "id": "cust_04",
+    "name": "Yonas Girma",
+    "phone": "+251913445566",
+    "email": "yonas.girma@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_04_addr_1",
+        "label": "Home",
+        "address": "Gerji, Bethlehem area",
+        "subCity": "Bole",
+        "lat": 9.021,
+        "lng": 38.793
+      }
+    ],
+    "defaultAddressId": "cust_04_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2026-06-18T07:15:47.000Z"
+  },
+  {
+    "id": "cust_05",
+    "name": "Selamawit Abebe",
+    "phone": "+251914556677",
+    "email": "selamawit.abebe@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_05_addr_1",
+        "label": "Home",
+        "address": "Old Airport, Tsegaye street",
+        "subCity": "Bole",
+        "lat": 8.983,
+        "lng": 38.769
+      },
+      {
+        "id": "cust_05_addr_2",
+        "label": "Work",
+        "address": "Bole airport road, Skylight area",
+        "subCity": "Bole",
+        "lat": 8.978,
+        "lng": 38.789
+      }
+    ],
+    "defaultAddressId": "cust_05_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2026-03-10T07:15:02.000Z"
+  },
+  {
+    "id": "cust_06",
+    "name": "Michael Tadesse",
+    "phone": "+251915667788",
+    "email": "michael.tadesse@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_06_addr_1",
+        "label": "Home",
+        "address": "Piassa, Arada street 12",
+        "subCity": "Arada",
+        "lat": 9.034,
+        "lng": 38.75
+      }
+    ],
+    "defaultAddressId": "cust_06_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-12-10T07:15:59.000Z"
+  },
+  {
+    "id": "cust_07",
+    "name": "Tigist Alemu",
+    "phone": "+251916778899",
+    "email": "tigist.alemu@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_07_addr_1",
+        "label": "Home",
+        "address": "Megenagna, Dhaka area",
+        "subCity": "Yeka",
+        "lat": 9.012,
+        "lng": 38.806
+      }
+    ],
+    "defaultAddressId": "cust_07_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-11-25T07:15:03.000Z"
+  },
+  {
+    "id": "cust_08",
+    "name": "Dawit Haile",
+    "phone": "+251917889900",
+    "email": "dawit.haile@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_08_addr_1",
+        "label": "Home",
+        "address": "Summit, Safari building",
+        "subCity": "Bole",
+        "lat": 9.029,
+        "lng": 38.799
+      }
+    ],
+    "defaultAddressId": "cust_08_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2026-07-08T07:15:15.000Z"
+  },
+  {
+    "id": "cust_09",
+    "name": "Bethelehem Solomon",
+    "phone": "+251918990011",
+    "email": "bethelehem.solomon@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_09_addr_1",
+        "label": "Home",
+        "address": "Haile Garment, house 44",
+        "subCity": "Nifas Silk-Lafto",
+        "lat": 8.975,
+        "lng": 38.766
+      }
+    ],
+    "defaultAddressId": "cust_09_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-10-25T07:15:28.000Z"
+  },
+  {
+    "id": "cust_10",
+    "name": "Nathan Kassa",
+    "phone": "+251919101112",
+    "email": "nathan.kassa@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_10_addr_1",
+        "label": "Home",
+        "address": "CMC road, St. Michael church",
+        "subCity": "Bole",
+        "lat": 9.028,
+        "lng": 38.817
+      }
+    ],
+    "defaultAddressId": "cust_10_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-12-19T07:15:10.000Z"
+  },
+  {
+    "id": "cust_11",
+    "name": "Meron Assefa",
+    "phone": "+251920202020",
+    "email": "meron.assefa@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_11_addr_1",
+        "label": "Home",
+        "address": "Ayat, Menaharia area",
+        "subCity": "Yeka",
+        "lat": 9.045,
+        "lng": 38.826
+      }
+    ],
+    "defaultAddressId": "cust_11_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2026-05-05T07:15:38.000Z"
+  },
+  {
+    "id": "cust_12",
+    "name": "Samuel Negash",
+    "phone": "+251921212121",
+    "email": "samuel.negash@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_12_addr_1",
+        "label": "Home",
+        "address": "Gurd Shola, near Tabote Building",
+        "subCity": "Bole",
+        "lat": 9.021,
+        "lng": 38.81
+      }
+    ],
+    "defaultAddressId": "cust_12_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-10-27T07:15:40.000Z"
+  },
+  {
+    "id": "cust_13",
+    "name": "Eden Wolde",
+    "phone": "+251922323232",
+    "email": "eden.wolde@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_13_addr_1",
+        "label": "Home",
+        "address": "Kality, behind the brewery",
+        "subCity": "Akaky Kaliti",
+        "lat": 8.954,
+        "lng": 38.768
+      }
+    ],
+    "defaultAddressId": "cust_13_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-11-11T07:15:00.000Z"
+  },
+  {
+    "id": "cust_14",
+    "name": "Liya Girmay",
+    "phone": "+251923434343",
+    "email": "liya.girmay@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_14_addr_1",
+        "label": "Home",
+        "address": "Shiro Meda, weavers street",
+        "subCity": "Gulele",
+        "lat": 9.047,
+        "lng": 38.764
+      }
+    ],
+    "defaultAddressId": "cust_14_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2026-01-17T07:15:15.000Z"
+  },
+  {
+    "id": "cust_15",
+    "name": "Firaol Bekele",
+    "phone": "+251924545454",
+    "email": "firaol.bekele@example.com",
+    "savedAddresses": [
+      {
+        "id": "cust_15_addr_1",
+        "label": "Home",
+        "address": "Lebu, Mebrathayllem area",
+        "subCity": "Nifas Silk-Lafto",
+        "lat": 8.965,
+        "lng": 38.735
+      }
+    ],
+    "defaultAddressId": "cust_15_addr_1",
+    "phoneVerified": true,
+    "createdAt": "2025-11-26T07:15:42.000Z"
+  }
+]
