@@ -16,9 +16,12 @@ type VendorProduct = Product & { hidden: boolean };
 export default function VendorProductsPage() {
   const { vendorShopId, vendorShop } = useAuth();
   const { lang } = useLang();
-  const [shopData, setShopData] = useState<{ shop: Shop; products: VendorProduct[] } | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [reloadTick, setReloadTick] = useState(0);
+  const [result, setResult] = useState<{
+    shopId: string;
+    data: { shop: Shop; products: VendorProduct[] } | null;
+    error: string | null;
+  }>({ shopId: "", data: null, error: null });
   const [query, setQuery] = useState("");
   const [tab, setTab] = useState<"all" | "published" | "hidden">("all");
   const [editing, setEditing] = useState<Product | null>(null);
@@ -33,24 +36,28 @@ export default function VendorProductsPage() {
     { id: "cat_home", nameEn: "Home & Living" },
   ], []);
 
+  useEffect(() => {
+    let cancelled = false;
+    api<{ shop: Shop; products: VendorProduct[] }>(`/api/shops/${vendorShopId}?all=1`)
+      .then((data) => {
+        if (!cancelled) setResult({ shopId: vendorShopId, data, error: null });
+      })
+      .catch((e: Error) => {
+        if (!cancelled) setResult({ shopId: vendorShopId, data: null, error: e.message });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [vendorShopId, reloadTick]);
+
   async function load() {
-    if (!vendorShopId) return;
-    setLoading(true);
-    try {
-      const data = await api<{ shop: Shop; products: VendorProduct[] }>(`/api/shops/${vendorShopId}?all=1`);
-      setShopData(data);
-      setError(null);
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      setLoading(false);
-    }
+    setReloadTick((t) => t + 1);
   }
 
-  useEffect(() => {
-    void load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [vendorShopId]);
+  const current = result.shopId === vendorShopId ? result : null;
+  const shopData = current?.data ?? null;
+  const loading = current === null;
+  const error = current?.error ?? null;
 
   const visible = (shopData?.products ?? []).filter((p) => {
     if (tab === "published") return !p.hidden;
